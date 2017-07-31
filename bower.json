@@ -1,0 +1,22 @@
+{
+  "name": "foundation-zurb-template",
+  "description": "Official ZURB Template for Foundation for Sites.",
+  "main": "gulpfile.js",
+  "authors": [
+    "ZURB <foundation@zurb.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "OwlCarousel": "^1.3.2",
+    "slick-carousel": "^1.7.1"
+  }
+}

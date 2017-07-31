@@ -1,0 +1,37 @@
+//Slider
+.fa {
+	color: #000;
+	&:hover {
+		transition: all .3s;
+		color: #fff;
+	}
+}
+.orbit-previous, .orbit-next {
+	background-color: #fff;
+	font-family: 'fontAWesome';
+}
+.orbit-previous {
+	left: 10%;
+}
+.orbit-next {
+	right: 10%;
+}
+//Media quaries
+@include breakpoint(small) {
+	.slider {
+		.orbit-controls {
+			.orbit-previous, .orbit-next {
+				display: none;
+			}
+		}
+	}
+}
+@include breakpoint(medium) {
+	.slider {
+		.orbit-controls {
+			.orbit-previous, .orbit-next {
+				display: block;
+			}
+		}
+	}
+}
