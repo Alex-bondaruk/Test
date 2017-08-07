@@ -42,8 +42,7 @@ $( document ).ready(function() {
         effect: 'coverflow',
         loop: true,
         centeredSlides: true,
-        slidesPerView:3,
-        initialSlide: 3,
+        slidesPerView: 'auto',
         keyboardControl: true,
         mousewheelControl: true,
         lazyLoading: true,
@@ -55,7 +54,7 @@ $( document ).ready(function() {
         coverflow: {
             rotate: 0,
             stretch: 0,
-            depth: 250,
+            depth: 200,
             modifier: 1,
             slideShadows : false,
         }

@@ -61,8 +61,8 @@ header {
         font-family: 'DINPro-Light', sans-serif;
         font-size: 12px;
         font-weight: 300;
-       /* border-right: 1px solid #2f2f2f;
-        padding: 0 19px;*/
+        /* border-right: 1px solid #2f2f2f;
+         padding: 0 19px;*/
         padding-left: 0;
         padding-right: 42px;
         &::after {
@@ -352,9 +352,9 @@ header {
   }
   .cart {
     float: right;
-      .price__cart {
-        font-size: 12px;
-      }
+    .price__cart {
+      font-size: 12px;
+    }
   }
   .time__work {
     p {
@@ -396,10 +396,16 @@ header {
     }
   }
 }
+
 @include breakpoint(xlarge) {
   .header__phone {
     p {
       text-align: left;
+    }
+  }
+  .header_bottom__nav {
+    li {
+      margin-right: 58px;
     }
   }
 }

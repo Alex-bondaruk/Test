@@ -29,7 +29,8 @@ PATHS:
     - "node_modules/motion-ui/src"
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
-    - "bower_components/OwlCarousel/owl-carousel/owl.carousel.js"
-    #- "bower_components/owl-carousel-2/owl.carousel.js"
     - "src/assets/js/app.js"
+  npmJavascript:
+    #- "bower_components/slick-carousel/slick/slick.js"
+    - "bower_components/swiper/dist/js/swiper.js"
 
