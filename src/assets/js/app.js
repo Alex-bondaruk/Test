@@ -9,16 +9,55 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 $( document ).ready(function() {
-	$('.owl-carousel').owlCarousel({
-        responsive: true,
-        items : 3,
-        autoPlay : true,
-        navigation : true,
-        navigationText :  ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-        pagination : false,
-        itemsDesktop : [1200,3],
-        itemsDesktopSmall : [1100,2],
-        itemsTablet: [768,1],
-        itemsMobile : [479,1]
-	});
+    /*$('#carousel').slick({
+        centerMode: true,
+        centerPadding: '0',
+        nextArrow: '<i class="fa fa-angle-right"></i>',
+        prevArrow: '<i class="fa fa-angle-left"></i>',
+        //autoplay: true,
+        //autoplaySpeed: 3000,
+       //variableWidth: true,
+        //infinite: true,
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });*/
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        loop: true,
+        centeredSlides: true,
+        slidesPerView:3,
+        initialSlide: 3,
+        keyboardControl: true,
+        mousewheelControl: true,
+        lazyLoading: true,
+        preventClicks: false,
+        preventClicksPropagation: false,
+        lazyLoadingInPrevNext: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        coverflow: {
+            rotate: 0,
+            stretch: 0,
+            depth: 250,
+            modifier: 1,
+            slideShadows : false,
+        }
+    });
 });

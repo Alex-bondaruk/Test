@@ -67,6 +67,7 @@
 // ---------
 $accent: #c2185b;
 $grey: #2f2f2f;
+$plch: #777;
 
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
@@ -523,7 +524,7 @@ $orbit-bullet-margin-bottom: 0.8rem;
 $orbit-caption-background: rgba($black, 0.5);
 $orbit-caption-padding: 1rem;
 $orbit-control-background-hover: rgba($black, 0.5);
-$orbit-control-padding: 1rem;
+$orbit-control-padding: .5rem 1rem;
 $orbit-control-zindex: 10;
 
 // 27. Pagination

@@ -1,6 +1,7 @@
 //Slider
 .fa {
 	color: #000;
+	font-size: 30px;
 	&:hover {
 		transition: all .3s;
 		color: #fff;
@@ -11,10 +12,15 @@
 	font-family: 'fontAWesome';
 }
 .orbit-previous {
-	left: 10%;
+	left: 6.8%;
 }
 .orbit-next {
-	right: 10%;
+	right: 9%;
+}
+.orbit-figure {
+	img {
+		height: 578px;
+	}
 }
 //Media quaries
 @include breakpoint(small) {
@@ -32,6 +38,11 @@
 			.orbit-previous, .orbit-next {
 				display: block;
 			}
+		}
+	}
+	.orbit-figure {
+		img {
+			height: auto;
 		}
 	}
 }
