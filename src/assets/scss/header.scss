@@ -61,8 +61,6 @@ header {
         font-family: 'DINPro-Light', sans-serif;
         font-size: 12px;
         font-weight: 300;
-        /* border-right: 1px solid #2f2f2f;
-         padding: 0 19px;*/
         padding-left: 0;
         padding-right: 42px;
         &::after {
@@ -90,12 +88,15 @@ header {
   }
   .search__wrapper {
     float: right;
+    height: 45px;
+    line-height: 45px;
+    margin-top: -5px;
     margin-right: 29px;
+    display: inline-block;
   }
   .search_block {
     display: inline-block;
     padding-right: 27px;
-    margin-bottom: 13px;
     .input-group {
 
       &-field {
@@ -120,18 +121,24 @@ header {
       }
       button {
         display: inline-block;
+
+        text-align: center;
         cursor: pointer;
         padding-left: 5px;
+        i {
+          vertical-align: middle;
+        }
       }
     }
   }
   .enter {
+    height: 42px;
+    line-height: 42px;
     display: inline-block;
     .enter__link {
       display: inline-block;
       .sprite-user {
-        display: inline-block !important;
-        line-height: 45px !important;
+        vertical-align: middle;
       }
     }
     .enter__text {
@@ -169,6 +176,7 @@ header {
     display: inline-block;
     color: white;
     width: 165px;
+    margin-left: -2px;
     height: 34px;
     font-family: 'DINPro-Light', sans-serif;
     font-size: 12px;
@@ -178,6 +186,7 @@ header {
     border: 1px solid $accent;
     text-align: center;
     cursor: pointer;
+    letter-spacing: .2px;
     &:hover {
       background-color: $accent;
       transition: .3s;
@@ -209,42 +218,42 @@ header {
 }
 
 .header__cart {
-  height: 60px;
-  margin-bottom: 23px;
+  height: 50px;
+  margin-bottom: 33px;
   a {
     position: relative;
-  }
-  .count {
-    display: inline-block;
-    color: #fff;
-    position: absolute;
-    top: -40%;
-    right: 0%;
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-    font-size: 12px;
-    background-color: $accent;
-    border-radius: 50%;
+    i {
+      margin-top: 5px;
+      margin-bottom: -5px;
+    }
+    .count {
+      display: inline-block;
+      color: #fff;
+      position: absolute;
+      top: -25%;
+      right: 10%;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      font-size: 12px;
+      background-color: $accent;
+      border-radius: 50%;
+    }
   }
 }
 
 .heart__block {
+  height: 40px;
+  line-height: 40px;
   a {
-    margin-right: 60px;
-  }
-  .count {
-    display: inline-block;
-    color: #fff;
-    position: absolute;
-    top: -65%;
-    right: -35%;
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-    font-size: 12px;
-    background-color: $accent;
-    border-radius: 50%;
+    margin-right: 55px;
+    i {
+      vertical-align: middle;
+    }
+    .count {
+      top: -20%;
+      right: -35%;
+    }
   }
 }
 
@@ -253,8 +262,8 @@ header {
   float: right;
   text-align: right;
   padding-right: 34px;
-  padding-bottom: 5px;
   .price__cart {
+    display: inline-block;
     color: #fff;
     font-family: 'DINPro-Light', sans-serif;
     font-size: 14px;
@@ -265,7 +274,7 @@ header {
 .time__work {
   p {
     text-align: right;
-    padding-right: 24px;
+    padding-right: 29px;
     color: #fff;
     font-family: 'DINPro-Light', sans-serif;
     font-size: 16px;
@@ -278,8 +287,9 @@ header {
 //Header__botom__nav
 .header_bottom__nav {
   min-height: 50px;
+  margin-right: 34px;
   li {
-    margin-right: 58px;
+    margin-right: 57px;
     &:last-child {
       margin-right: 0;
     }
@@ -318,6 +328,10 @@ header {
 
 //Media queries
 @include breakpoint(small) {
+  .header__logo {
+    margin-left: 0;
+    margin-top: 0;
+  }
   .callback__wrap {
     text-align: center;
     float: none;
@@ -342,6 +356,9 @@ header {
       text-align: center;
     }
   }
+  .item.swiper-slide.swiper-slide-active {
+    padding: 65px 50px;
+  }
 }
 
 @include breakpoint(medium) {
@@ -363,6 +380,7 @@ header {
     }
   }
   .header_bottom__nav {
+    margin-right: 0;
     li {
       margin-right: 15px;
       a {
@@ -373,6 +391,10 @@ header {
 }
 
 @include breakpoint(large) {
+  .header__logo {
+    margin-left: 62px;
+    margin-top: 5px;
+  }
   .callback__wrap {
     text-align: center;
     float: none;
@@ -384,6 +406,7 @@ header {
     }
   }
   .header_bottom__nav {
+    margin-right: 34px;
     li {
       margin-right: 30px;
       a {
@@ -394,6 +417,19 @@ header {
         }
       }
     }
+  }
+  .cart {
+    .price__cart {
+      font-size: 14px;
+    }
+  }
+  .time__work {
+    p {
+      font-size: 16px;
+    }
+  }
+  .item.swiper-slide.swiper-slide-active {
+    padding: 65px 23px;
   }
 }
 

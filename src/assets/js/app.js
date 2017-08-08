@@ -44,6 +44,7 @@ $( document ).ready(function() {
         centeredSlides: true,
         slidesPerView: 'auto',
         keyboardControl: true,
+        spaceBetween: -100,
         mousewheelControl: true,
         lazyLoading: true,
         preventClicks: false,
@@ -54,7 +55,7 @@ $( document ).ready(function() {
         coverflow: {
             rotate: 0,
             stretch: 0,
-            depth: 200,
+            depth: 180,
             modifier: 1,
             slideShadows : false,
         }
